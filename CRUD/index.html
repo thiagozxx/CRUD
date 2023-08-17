@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/BUTTON.css">
+    <link rel="stylesheet" href="CSS/gravar.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Cliente</h1>
+    </header>
+    <main>
+        <button class="" type="button" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id="tableClient" class="gravar">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                </header>
+                <form action="" id="form" class="modal-form">
+                    <input type="text" id="nome" class="modal-field" placeholder="Nome do cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="Digite o email do cliente" required>
+                    <input type="tel" id="celular" class="modal-field" placeholder="Numero celular do cliente" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="cidade do Cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        copyright &#169; Thiago Carvalho
+    </footer>
+</body>
+<!-- O ATRIBUTO DEFER DIZ AO NAVEGADOR PARA EXECUTAR O SCRIPT APENAS QUANDO A
+A ANALISE DO HTML ESTIVER FINALIZADA -->
+<script src="js/main.js" defer></script>
+</html>
